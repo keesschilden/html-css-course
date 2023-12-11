@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exercise 6</title>
+  </head>
+
+  <body>
+    <style>
+      div {
+        font-family: arial;
+      }
+      .container {
+        border: solid;
+        border-width: 1px;
+        border-color: black;
+        width: 300px;
+        border-radius: 5px;
+      }
+
+      .flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .flexbox:hover {
+        cursor: pointer;
+      }
+
+      .notifications {
+        background-color: blue;
+        border-radius: 20px;
+        color: white;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    </style>
+
+    <div class="container">
+      <div class="flexbox">
+        <div>Home</div>
+        <div class="notifications">14</div>
+      </div>
+
+      <div class="flexbox">
+        <div>Notifications</div>
+        <div class="notifications">3</div>
+      </div>
+
+      <div class="flexbox">
+        <div>Messages</div>
+        <div class="notifications">5</div>
+      </div>
+    </div>
+  </body>
+</html>
