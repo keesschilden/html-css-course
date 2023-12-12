@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exercise 6 flexbox</title>
+
+    <style>
+      .header {
+        display: flex;
+        height: 50px;
+        margin-top: 20px;
+      }
+
+      .left-section {
+        background-color: lightpink;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text1 {
+        background-color: black;
+        color: white;
+      }
+
+      .right-section {
+        background-color: lightblue;
+        width: 200px;
+      }
+
+      .row2 {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .row-2-item {
+        background-color: black;
+        color: white;
+      }
+
+      .blok {
+        width: 200px;
+
+        height: 100px;
+        margin-top: 10px;
+        border: solid;
+        border-color: gray;
+        border-width: 1px;
+      }
+
+      .top {
+        display: flex;
+        background-color: pink;
+      }
+
+      .profile-picture {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <div class="text1">Item 1</div>
+      </div>
+      <div class="right-section"></div>
+    </div>
+
+    <div class="header">
+      <div class="left-section">
+        <div></div>
+      </div>
+
+      <div class="right-section">
+        <div>sadsa</div>
+        <div class="row2">
+          <div class="row-2-item">sadsada</div>
+          <div class="row-2-item">sdasda</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blok">
+      <div class="top">ALL INBOXES</div>
+      <div class="profile-picture">
+        <img
+          class="current-user-picture"
+          src="icons/my-channel.jpeg"
+          alt="error"
+        />
+      </div>
+    </div>
+  </body>
+</html>
