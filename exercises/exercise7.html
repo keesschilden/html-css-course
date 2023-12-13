@@ -67,7 +67,7 @@
     </style>
   </head>
 
-  <body>
+  <body style="height: 3000px">
     <div class="header">
       <div class="left-section">
         <div class="text1">Item 1</div>
@@ -162,6 +162,18 @@
       </div>
     </div>
 
+    <div class="bottom-right">bottom-right</div>
+
+    <div class="sidebar-right">Right-sidebar</div>
+
+    <div class="overlay">
+      <div class="container">
+        <h1>Modal Title</h1>
+        <p>This is a modal</p>
+        <button class="close-button">Close</button>
+      </div>
+    </div>
+
     <style>
       .blok {
         width: 370px;
@@ -221,6 +233,134 @@
         color: gray;
         font-size: 12px;
       }
+
+      .bottom-right {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background-color: black;
+        color: white;
+      }
+
+      .sidebar-right {
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100px;
+        background-color: green;
+        color: white;
+      }
+
+      .overlay {
+        position: fixed;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: arial;
+      }
+
+      .container {
+        background-color: white;
+        padding-left: 20px;
+        padding-right: 200px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      .close-button {
+        border-radius: 5px;
+        border-width: 1px;
+      }
+
+      .close-button:hover {
+        cursor: pointer;
+      }
+
+      .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 50px;
+        background-color: rgb(44, 43, 43);
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+      }
+
+      .profiles {
+        border-radius: 500px;
+        width: 50px;
+        margin-top: 10px;
+      }
+
+      .sidebar-2 {
+        position: fixed;
+        left: 70px;
+        top: 0;
+        bottom: 0;
+        width: 150px;
+        background-color: rgb(58, 57, 57);
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        font-family: arial;
+      }
+
+      .head {
+        display: grid;
+        columns: 2;
+        grid-template-rows: 1;
+        position: relative;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        color: white;
+      }
+
+      .plus {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+
+      .channels {
+        color: gray;
+        margin-top: 10px;
+      }
+
+      .channel-name {
+        margin-top: 10px;
+      }
     </style>
+
+    <div class="sidebar">
+      <div>
+        <img class="profiles" src="/channel-pics/channel-1.jpeg" alt="error" />
+        <img class="profiles" src="/channel-pics/channel-1.jpeg" alt="error" />
+        <img class="profiles" src="/channel-pics/channel-1.jpeg" alt="error" />
+      </div>
+    </div>
+
+    <div class="sidebar-2">
+      <div class="container-2">
+        <div class="head">
+          <div class="info">INFO</div>
+          <div class="plus">+</div>
+        </div>
+      </div>
+      <div class="channels">
+        <div class="channel-name"># new-videos</div>
+
+        <div class="channel-name"># updates</div>
+
+        <div class="channel-name"># faq</div>
+      </div>
+    </div>
   </body>
 </html>
