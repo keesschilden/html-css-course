@@ -1,0 +1,47 @@
+body {
+  background-color: blue;
+}
+
+.container-all {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+}
+
+.image {
+  width: 300px;
+}
+
+.korting {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px 5px;
+  font-family: arial;
+}
+
+.bottom {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 300px;
+  height: 100px;
+  bottom: 3px;
+}
+
+.button-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.button {
+  position: absolute;
+  top: 40px;
+  padding: 7px 13px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
