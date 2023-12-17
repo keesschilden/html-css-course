@@ -22,6 +22,29 @@
 
 .channel-pic-blok {
   vertical-align: top;
+  position: relative;
+}
+
+.channel-pic-blok .tooltip {
+  position: absolute;
+  bottom: -22px;
+  display: flex;
+  opacity: 0;
+  box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.57);
+  width: 200px;
+  z-index: 100;
+
+  padding: 5px 5px;
+  background-color: white;
+  align-items: center;
+}
+
+.channel-picture:hover ~ .tooltip {
+  opacity: 1;
+}
+
+.tooltip-text {
+  font-size: 12px;
 }
 
 .video-info {
@@ -59,12 +82,30 @@
   row-gap: 40px;
 }
 
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .video-time {
   position: absolute;
   bottom: 10px;
   right: 5px;
-  padding: 4px 4px;
-  font-family: roboto, Arial;
+  padding: 4px;
+
   font-size: 12px;
   font-weight: 500;
   background-color: black;
